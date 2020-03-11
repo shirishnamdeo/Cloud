@@ -1,0 +1,109 @@
+https://cloud.google.com/vision/
+
+Credentials: https://console.cloud.google.com/apis/credentials/wizard?api=vision.googleapis.com&project=cfo-cfost-lab-nk1i4
+
+
+This Google Cloud Platform API is usually accessed from a server using a service account. To access it on behalf of a user instead, which is common with some administrative tasks, create an OAuth client.
+
+Are you planning to use this API with App Engine or Compute Engine?
+Applications running on GCE and GAE can use application default credentials and don't require that you create a credential.
+
+
+def hello_gcs_generic(data, context):
+    """Background Cloud Function to be triggered by Cloud Storage.
+       This generic function logs relevant data when a file is changed.
+
+    Args:
+        data (dict): The Cloud Functions event payload.
+        context (google.cloud.functions.Context): Metadata of triggering event.
+    Returns:
+        None; the output is written to Stackdriver Logging
+    """
+
+    print('Event ID: {}'.format(context.event_id))
+    print('Event type: {}'.format(context.event_type))
+    print('Bucket: {}'.format(data['bucket']))
+    print('File: {}'.format(data['name']))
+    print('Metageneration: {}'.format(data['metageneration']))
+    print('Created: {}'.format(data['timeCreated']))
+    print('Updated: {}'.format(data['updated']))
+
+
+
+Group Finance Systems
+HFM -> Actuals
+BPS -> Forecast
+
+ETR -> Tableau
+
+
+feable
+
+
+Google Search API
+PDF is treated as Image
+
+Logic App (Azure)
+
+
+
+The Vision API can detect and extract text from images. There are two annotation features that support optical character recognition (OCR):
+
+TEXT_DETECTION detects and extracts text from any image. 
+For example, a photograph might contain a street sign or traffic sign. The JSON includes the entire extracted string, as well as individual words, and their bounding boxes.
+
+DOCUMENT_TEXT_DETECTION also extracts text from an image, but the response is optimized for dense text and documents. The JSON includes page, block, paragraph, word, and break information.
+
+
+https://cloud.google.com/vision/docs/handwriting
+https://cloud.google.com/vision/docs/pdf
+
+
+GCP organizes resources into projects, which collect all of the related resources for a single application in one place.
+Cloud Shell is a built-in command-line tool for the console. We're going to use Cloud Shell to deploy our app.
+
+git clone https://github.com/GoogleCloudPlatform/golang-samples
+https://github.com/GoogleCloudPlatform
+
+https://github.com/GoogleCloudPlatform/python-docs-samples/blob/master/vision/cloud-client/detect/detect.py
+
+
+
+Denial-of-service attack (DOS)
+Distributed denial-of-service attack (DDoS attack)
+
+
+
+def process_pdf(data, context):
+
+	from google.cloud import storage
+	from google.cloud import vision
+	from google.protobuf import json_format
+
+	bucket = data['bucket']
+	source_file = 'gs://' + bucket + '/' + data['name']
+	dest_file = 'gs://' + bucket + '/' + data['name'] + '_converted'
+
+	#Tejas' edit begins
+	if source_file[-4:]==".pdf":
+		print ("we have entered succesfully")
+	#Tejas' edit ends
+		
+		mime_type = 'application/pdf'
+		batch_size = 16
+		client = vision.ImageAnnotatorClient()
+		
+		feature = vision.types.Feature(type=vision.enums.Feature.Type.DOCUMENT_TEXT_DETECTION)
+		gcs_source = vision.types.GcsSource(uri=source_file)
+		input_config = vision.types.InputConfig(gcs_source=gcs_source, mime_type=mime_type)
+		
+		gcs_destination = vision.types.GcsDestin0ation(uri=dest_file)
+		output_config = vision.types.OutputConfig(gcs_destination=gcs_destination, batch_size=batch_size)
+		
+		async_request = vision.types.AsyncAnnotateFileRequest(features=[feature], input_config=input_config, output_config=output_config)
+		operation = client.async_batch_annotate_files(requests=[async_request])
+		operation.result(timeout=180)
+	
+	else:
+		print ("thisss is the  -------> "+source_file)
+		return "this is the  -------> "+source_file

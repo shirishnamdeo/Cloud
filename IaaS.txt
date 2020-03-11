@@ -1,0 +1,12 @@
+IaaS -> Infrastructure As A Service
+
+It refers to online service that refers to high level API use to deference various low level details of underlying network Infrastructue like physical computing, data partitioning, scaling. 
+In IaaS, consumer can deploy arbitary softwares, including OS and other applications.
+
+Managed By Customer:
+Applications, Data, Runtime, Middleware, O/S
+
+Managed By Provider:
+Virtualization, Servers, Storage, Networking
+
+

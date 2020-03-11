@@ -1,0 +1,342 @@
+Howard Dierking (Thinker, Builder, Leader)
+blog.howarddierking.com
+
+
+Amazon Web Services (AWS)
+Microsoft Azure
+Google Cloud Platform (GCP)
+
+
+Course for Archtect & Technology Decision Makers
+Solution Archetypes(Common ways people build applications over GCP) over implementations
+
+
+Introduction GCP (A public cloud service provider):
+-> Service provided are hosted by google and they are made available to anyone who is willing to pay for them. 
+-> Started in 2008 with just one service (Leverages Google's massive and robust Infrastructure)
+
+
+Google App Engine        Apr-08
+Google Cloud Storage
+Big Query
+Compute Engine 
+Cloud Storage
+Cloud Datastore
+Genomics API
+Cloud Pub/Sub
+Container Engine
+Cloud Dataflow
+BigTable
+Cloud Dataproc
+Cloud Functions
+Cloud SQL
+Translation API
+Natutal Language API
+Cloud DataLab
+Cloud ML Engine
+Speach API              Apr-17
+
+
+Stack Driver
+
+Google builds its services in a such a way as to enable layering so that over time services can be released more quickly because 
+thay are build on existing services.
+
+
+Def of Cloud Computing:
+Cloud Computing is a type of Internet-based computing that provides shared COMPUTER PROCESING RESOURCES and DATA to computers
+and other devices on demand.
+
+Cloud Computing breaks apart key functions of a computer and then offers them as individual services.
+
+1. Processing (Raw Computation Power)
+2. Storage(variety of forms based on type of data we are storing)
+3. Networking (Is the glue that connects all of these pieces together)
+
+Scale out in Cloud Computing: Instead of getting bigger and bigger machine add more small nodes.
+When more need for capacity, simply add nodes. And when the need deminishes, turn of the nodes that you don't need.
+Scale out sounds good in theory, but will only work if it will be efficiently co-ordinate all of the different nodes handling the 
+work, and this requires fast and reliable network.
+
+
+GCP provides multiple options in each of the above three categories based on different two primary reasons.
+1. Each service differs in functionality.
+2. Each service also differs in its level of abstraction, given us the choice when putting together the different components of
+   our system for whether we want to optimize on control side or ease of development and ease of operations on the other.
+
+
+Google has exelled at this in two particularlyareas: Big Data (large scale data processing) and Machine Learning.
+
+In 2018, GCP is distributed in 18 regions and there are 55 avaibility zones or fault tolerant domains.
+https://cloud.withgoogle.com/infrastructure
+
+
+Key areas of differentiation incude Google's Network, Pricing & Technology
+
+
+Sustained Use Discounts: For long-running compute workloads (longer running -> More discounts)
+Committed Use Discounts: 
+Preemptible Virtual Machines: For Batch Processing WorkFlows. Do they only last for 24 hrs?
+Flexible Machine Configurations: 
+
+
+cloud.google.com/products/calculator
+
+Every SERVICE exposed to GCP must do so through an API.
+
+AWS S3, Glacier, and CloudFront
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+1. What the services are?
+2. What type of problem they are created to address?
+
+IAAS -> Infrastructure as a Service
+PAAS -> Platform as a Service
+
+Shift from IAAS to PAAS.
+
+Initially, Even though the application software was layered. those layers typically all resided on the same machine, the
+Application Server.
+
+
+Reality of Code: Different people working on different layers of application:
+	Web API Layer
+	Business Workflow Layer
+	Domain Logic
+	Data Access
+
+
+Reality of Data Center: 
+
+
+Micorservices vs Nanoservices.
+
+arnon.me services micorservies nanoservices
+
+
+Compute: (IP)
+
+Compute Engine     : Pure IAAS
+	Even select the class of CPU we want such as Intel Skylake Processor and the number and type of GPUs to attach.
+	Sole tenant option. Physical machine isolation b/w your VM and others VM's
+	Instance template and groups and autoscaling
+
+Kubernetes Engine  : Containeer AS A Service CAAS
+App Engine	       : Pure PAAS
+Cloud Functions    : Pure PAAS (Google's Most recent edition to its cloud services)
+
+Guideline is to try to optimize PaaS as much as possible and move towards IaaS. 
+
+
+Cloud Functions is one of Google's offering in space that has become known as Serverless Computing.
+Means we no longer needs to worry about any of the server details.
+Don't have to think about host computing environment at all. 
+Just write code and deploy it to the Cloud Functions runtime, and everything else is taken care of, from provisioning and 
+restartign to scaling.
+Trade-Off is that the runtime is constrained to a smaller number of languages. (Node.js and Python)
+
+
+Cloud Source Repositiries
+Testing locally via Cloud Functions emulator
+Tightly integrating with Stackdriverfor monitoring and trouble shooting.
+
+
+Kubernetes supports both Docker and Rocket container image formats.
+
+
+Cloud Build? 
+
+
+Cloud Native Computing Fiundation (CNCF)
+https://cncf.io
+Kubernetes Applications and Istio
+
+
+How google scan compute images?
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+Networking Later & Services:
+
+Networking is possibly the single most important feature of the platform.
+
+
+What makes Google's Network Special? (Compared with network infrastructure of other cloud providers)
+-> Its size and scale  
+-> Agility
+-> Performance (Both in terms of throughput & latency)
+
+Google's B4 Network
+Google's B2 Network (Edge Point of Presence PoPs)
+
+Edge Caching Nodes (GGC Google Gloabl Cache nodes)
+	-> These are google hardware inside of other service provider locations that cache google content to be closer to customers.
+	-> Hardware is remotelty managed by Google (they are though not on Google fiber optic backbone infrastructure)
+
+
+Software Defined Networking (SDN)
+	-> Would help google to offer services like anycast IP addresses for features like elastic load balancing and CDN, as opposed to other techniques like DNS round robin.
+	-> B4 (2013), Andromeda (NVF Netrowk Function Virtualization) (2014), Jupiter(2015), Espresso (2017)
+	http://cloud.withGoogle.com/infrastructure
+
+
+
+
+Virtual Private Cloud: 
+	-> Enable us to define a private network space, configure subnets, routes etc.
+	-> Simply put, it enables us to construct a new network from scratch
+	-> Metadata driven approach to policy
+	-> Shared VPCs for large, federated systems
+
+Cloud Load Balancing:
+	-> Single, load balanced IP address
+	-> Uses anycast IP addresses
+
+
+Cloud Armor and Telemetry:
+	-> Protect agains DDos (Distributed Denial of Service) attack
+	-> Ploicy can be applied up and down network stack, from OSI Applications Layer 7 all the way down to Layer 3.
+	-> Cloud Armor provided defence against network atacks
+	-> Telemetry provides detailed inspection of all VPC ingress and egress
+
+Content Delivery Network:
+	-> Extends caching beyond peering edge
+
+Cloud DNS:
+	-> Leverages existing Google DNS infrastructure
+
+Cloud Interconnect:
+	-> Connects existing network infrastructure to Google Netowrk
+	-> Included both VPS and peering connections
+	-> Supports direct and partner-mediate connections
+
+https://cloud.google.com/interconnect
+
+
+Network Service Tiers:
+	-> Base level and premium tiers, based on how long traffic stays in Google's network
+	-> Hot potato routing
+	-> Cold potato routing
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Amin Vehdat
+
+Cloud 2.0 (Using cloud services for inprovements to traditional model of designing, building and operating systems)
+
+Cloud 3.0 (Raises the level of abstraction to application experiences and data intelligence)
+Focuses on Applicationa and functions rather than virtual machines
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Security, Management and Tooling
+
+Security:
+Data Centers (Biometrics and Lazer based intrusion detection)
+Hardware (Chips for strong Crypographic authentication)
+Software (Nearly Everything is cryptographically signed, from BIOS to the boot loader and the kernel all the way to the OS image)
+
+https://cloud.google.com/beyondcorp
+
+Data at rest is encrypted
+Data is encrypted at both application layer and at the device layer.
+At Application layer, data is encrypted as it moves in and out of service.
+Device Protection -> Both traditional Disk and SSDs
+
+
+
+Data Flow Security:
+
+Service to Service Security Model
+
+
+OAuth Tokens to services
+
+
+Denail of service attack?
+
+
+Google Front End (GFE)
+TLS termination
+DoS protection
+
+cloud.google.com/security/compliance
+
+IAM (Identity And Access Management)
+
+
+HTTPS, RPC
+
+
+
+Stackdriver (Logging and Monitoring)
+ 
+
+
+console.cloud.google.com
+gcloud command line tool (Cloud SDK)
+Cloud Shell
+
+API Explorer
+
+developers.google.com/apis-explorer
+
+
+Cloud Build
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Cloud 3.0 (IIP)
+	-> Shift from VM to Applications and Functions
+	-> Disk to a more abstract definition of storage, one that defines more by how storage is consumed rahter than by how it is managed.
+	-> Scheduler and Load Balancers needs to shift to SLA's
+	-> Middle boxes like switches, firewalls et cetera to declarative executable policy
+	-> Data processing to Intelligence and Insights
+
+Processing Events
+	Cloud Pub/Sub
+	Cloud DataFlow (Programming model is Apache Beam)
+
+Event sourcing, CQRS, Kappa
+
+
+
+Calonical data base 
+
+
+Traditional Business Applications:
+	-> Transactional Applications
+	-> Data Applications
+
+
+Aanlytics Tools:
+	-> Big Query
+	-> Cloud Dataproc (Gooogle managed service for tools from Apache Hadoop Ecosystem)
+	-> Cloud Datalabt
+	-> Cloud Dataprep
+	-> Google Data Studio
+
+
+Machine Learning:
+	-> Google Brain (Tensor Flow)
+	-> Google Fully Managed Machine Learning Engine (supported by Custom Hardware, TPUs)
+	-> Google already built few specifics model and are exposed as APIs 
+		[Cloud Talent, Cloud Natural Language, Cloud Speach to Text, Cloud text to Speach, Cloud Translation,
+		Cloud Vision, Cloud Video Intellegence, Cloud Inference API]
+	-> These APIs can be combined in powerful ways
+	-> Dialog Flow Service (Higher order services)
+	-> DataLab
+
+---------------------------------------------------------------------------------------------------------------------------------

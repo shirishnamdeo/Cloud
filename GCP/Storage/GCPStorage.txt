@@ -1,0 +1,158 @@
+-- https://medium.com/@jeevananandanne/google-cloud-storage-8afb6a860234
+
+GCP Storage:
+
+Buckets: 
+Basic containers that hold your data. Everything that you store in Google Cloud Storage must be contained in a bucket. 
+You can use buckets to organize your data and control access to your data, but unlike directories and folders, you cannot nest
+buckets.
+
+Bucket NAME -> Should be unique as the name of the buckets stored in single Cloud Storage namespace. 
+Also, bucket names can be used with a CNAME redirect, which means they need to conform to DNS naming conventions.
+
+
+Bucket LABLE -> Bucket labels are key:value metadata pairs that allow you to group your buckets along with other Google Cloud.
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Storage:
+
+Different types of Data to store and what we want to do with that data.
+
+
+Cloud SQL (Relational??)
+Blob Storage services like Cloud Storage 
+Persistent Disk
+Cloud Filestore
+Cloud BigTable
+Cloud Spanner
+Cloud DataStore (FireStore)
+Cloud MemoryStore
+
+ 
+Underpinning everything is Google's Brog system. 
+Omega for automating the provisioning of systems and infrastructure across the Google universe.
+Practically every service built at Google has relied on Brog for provisioning, scheduling and operations.
+And Brog used containers as the underlying primitive for job management, Brog helped to shape many of the key design constructs 
+in Google's next generation container orchestration system - Kubernetes.
+
+
+Colossus (Succesor to the Google File System - GFS)
+Colossus handles partitioning, replicating and providing fast access to data spread across thousands of machines in a cluster and
+provided  straight-forward abstraction to higher level database services like those offered by GCP.
+
+
+
+Cloud SQL:
+	-> Provides google manages instances of Postgres and MySql
+	-> Can scale the DB server up to 64 cores, 10TB storage and 416 Gb of RAM.
+	-> Database run on top of Compute Engine VM's, thus also get benifit of Compute engine cost optimizations.
+	-> Data is encrypted both in transis and at rest.
+
+
+Persistent Disk:
+	-> Analog to File System (provide Block storage)
+	-> Used in conjunction with VM's but are not the part of VM itself, and can be attached and detached from VM.
+	-> Can be attached / move to another VM
+	-> Single VM can has upto 16 persistent disks plugged or attached to it
+	-> Each disk can store upto 64TB of data. 
+	-> Beta feature of Conpute Engine allows upto 128 disks to be attached.
+	-> Single persistent disks can be attached to multiple virtual machines, but disk must be mounted as READ-ONLY on every VM
+	-> Standard vs Solid State Drive 
+	-> Customization also such as region and zone, data encryption.  
+	-> Resizing is possible
+	-> Underlying ingrastructure automation handles partitioning, redundancy and performance.
+
+
+IOPS -> Input/Output Operations per second vs Throughput
+
+
+What is automatic striping in disk?
+
+
+
+Cloud Filestore:
+	-> Analogus to  Network Attached Storage (NAS)
+	-> Shared block storage for Conpute VMs or Containers (Multiple compute nodes or Kubernetes containers)
+	-> Low latency, low maintenance
+	-> Eamaple for Video processing
+
+
+Cloud BigTable:
+	-> High performance at scale (usually at PetaByte scale).
+	-> Many notable google applications like GMAIL are built on.
+	-> Managed by Google
+	-> Scaled Horizontally
+	-> Interaction with API
+	-> Library support for multiple languages like C++ Java, C#, Golang, HappyBase, Node.js and Python.
+	-> CLI interface for shell scripting.
+	-> A table has only one indexed column, called rowkey. Table is sorted by that key.
+	-> No transactional guarantee beyond the scope of an operation on a single row.
+	-> Column Family
+	-> Supported extension with HBASE
+
+
+Cloud Storage (Google's Blob storage):
+	-> Analogus to Amazon S3
+	-> Automatically Edge Cached (do not have to worry about CDNs)
+	-> Different storage classes for different data types [Multi Regional / Regional / Near Line /  Cold Line]
+	-> Time to first byte to all the storage classes.
+	-> Price consitite of both the Cost of Storage + Cost of retrieving
+	-> Version Objects
+	-> Auto Deletion and Auto Migration configurations
+
+
+Cloud Spanner (managed Relational Database):
+	-> Horizontally scalable
+	-> Strong transactional guarantee for consistency and availability in the phase of being globally distributed.
+	-> Means, it has addresed the CAP throem of common distributed computing, Google solve the time problem with True Time.
+	   https://goo.gl/wKy25
+	-> Guarantees five nines of availability in its published services.
+	-> WAN replication?
+	-> Google F1 System?? (Advertising platform backend)
+
+
+Cloud Datastore:
+	-> Started as an App enging feature.
+	-> Built on top of Big-Table, but instead of SEMI structured Big Table's model, it is for Structured data.
+	-> Behaves like document database
+	-> Key is entity, and organized in kinds and entity groups
+	-> Schemaless
+	-> Entities of the same kind do not have to have the same properties and entities can have same properties but with data of 
+	   different types.
+	-> Support for strong Transaction guarantee within an entity group. 
+
+
+Cloud Firestore:
+	-> Name coming form Firebase company which google acquired
+	-> Firebase developed a real-time database
+	-> FireStore have both best of cloud data store and real time database in a single new service
+	-> Support for offline scenarios
+	-> Data Model shifted from Entity to more general Document
+	-> Entity Groups are shifted to more general Collections.
+	-> Storage Model - Firestore will enable strong consistency guarantee for tansactions across the entire database and not just entity group.
+
+
+Cloud Memory Store (Google managed in-memory store):
+	-> In Memory Database, which supports Redis protocol.
+	-> Ideal for Caching
+
+
+Example of in-memory database like Redis for Caching
+
+
+
+Throughput vs Latency
+
+
+
+
+
+Automatic Edge Cache	
+
+
+Cost of Data Storage + Cost of Data Access
+
+---------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,5 @@
+SaaS -> Software As A Service
+
+
+Managed By Provider:
+Applications, Data, Runtime, Middleware, O/S, Virtualization, Servers, Storage, Networking

@@ -1,0 +1,9 @@
+PaaS -> Platform As A Service
+
+Managed By Customer:
+Applications, Data
+
+Managed By Provider:
+Runtime, Middleware, O/S, Virtualization, Servers, Storage, Networking
+
+

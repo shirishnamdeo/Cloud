@@ -1,0 +1,7 @@
+Features of GCP
+	Cost Effective
+	Highly Scalable
+	Custom Machine Types (allow to create VM)
+	GCP IOT
+	Cloud AI
+	Serverless
