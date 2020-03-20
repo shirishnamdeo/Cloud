@@ -1,0 +1,32 @@
+-- https://www.youtube.com/watch?v=FZR0rG3HKIk
+
+Hypervisor: 
+
+Type 1 Hypervisor (sits on top of BareMetal):
+	More frequently used
+	Lower latency
+
+Type 2 Hypervisor (a layer of Host OS sits between the physical layer and Hypervisor, also knows an Hosted Hypervisor)
+	Example Oracle Virtual Box, VMWare
+	Higher lateny
+
+Over these Hypervisor, independed VMs can be spinoff/hosted.
+
+
+Because these Virual Machines are independent, they can be moved from one Hypervisor to onother Hypervisor on completely 
+different physical machine (almost instantaneously which gives flexibility and portability within the environment).
+
+
+
+
+Virtualization Benifits:
+1. Cost Benifits (Run multiple different environments from one piece of infrastructure, reduce physical infrastructure footprint)
+   Do not need to run as many servers, save electiticity, save maintenance cost.
+
+2. Agility & Speed
+   Spinning up a Virtual Machines is relatively easy and quick (ex if we want new environment for testing)
+
+
+3. Lowers the Downtime
+   Virtual Machines can be moved from one Hypervisor to another on a different physical server.
+   

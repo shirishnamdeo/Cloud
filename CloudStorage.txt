@@ -1,0 +1,55 @@
+-- https://www.webopedia.com/TERM/D/direct_attached_storage.html
+
+DAS -> Directly Attached Storage
+SAN -> Storage Area Network
+NAS -> Network Attached Storage (over LAN)
+
+
+Directly Attached Storage:
+-- https://www.webopedia.com/TERM/D/direct_attached_storage.html
+
+Directly attached to the computer/server accessing it, as opposed to storage accessed over a computer network (NAS). 
+DAS isn't part of a storage network.
+It could be SCSI connection (Small Computer System Interface), can be USB, FireWire etc.
+Examples of DAS include hard drives, solid-state drives, optical disc drives, and storage on external drives.
+
+But it doesn't have ability to scale.
+
+
+
+Storage Area Network (Block based storage):
+-- https://www.webopedia.com/TERM/S/SAN.html
+
+SAN is a high-speed network of storage devices that also connects those storage devices with servers.
+Provides block-level storage that can be accessed by the applications running on any networked servers.
+SAN storage devices can include tape libraries and disk-based devices, like RAID hardware.
+LUN (Logical unit number) -> Group of disk present to particular service.
+SAN be used as a service to virtulization environment.
+SAN is present to a server or a service as that if it is a disk which is attached to local computer.
+Protols used are iSCSI and FiberChannel
+
+
+For large organizations with many servers, SAN offers better performance and flexibility than DAS, along with potential cost savings, although SAN hardware can be costly.
+
+SCSI vs iSCSI
+
+
+Raid Groups
+Storage Pools
+
+
+
+
+Network Attached Storage (File Based Storage)
+Dependent on SMB, NFS protocols acting a file server.
+Have their own Operating=Systems
+
+
+-- https://www.youtube.com/watch?v=wTcxRObq738
+RAID -> Redundant Array of Independent  Disks
+RAID-0,1,2,3,4,5,6,1+0
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+https://www.youtube.com/watch?v=5EqAXnNm0FE [Block Storage vs. File Storage]

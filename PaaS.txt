@@ -1,4 +1,62 @@
+-- https://www.youtube.com/watch?v=QAbqJzd0PEE
+
+---------------------------------------------------------------------------------------------------------------------------------
+
 PaaS -> Platform As A Service
+
+IasS -> Is a set of compute, storage and network resources that have been virtualized by a vendor so that a user can access 
+and configure them any way they want.
+In design we have a concept called users called personas, and the personas for the IasS is a System Admin / IT Admin.
+
+
+PaaS -> It takes advantage of all the virtualized resources from IasS and then just abstract them away so the users doesn't have to worry about managing any of those virtualized resources.
+The users for PaaS is usually a Developer.
+
+
+SaaS -> Software as a Service is just software that you don't have to install on your machine and you don't have to update manually and the user for SaaS could be anyone.
+It is usually charged as a Subcription model rather than a one time licence fee.
+
+
+SaaS < PaaS < IasS
+
+So as we move down, we are increasing complexity in terms of your knowledge and management of infrastructure and resources. And going up increases your ease of use.
+
+	
+---------------------------------------------------------------------------------------------------------------------------------
+
+Vendor Provides:
+	Servers
+	Storage
+	Networking
+	Virtualization
+	Middleware
+	OS
+	Renting
+
+Develope Provide:
+	Data
+	Appilation
+
+
+PROS of using PaaS:
+-> Fast and Easy (to get an app up and running)
+-> Easy to create and delete the resources (which for example we have a Proof-Of-Concept for a conference, which we want to spin it up before the conference and delete it right after, then we are not paying for the whole month), result in cost benifit.
+-> Tools like DevOps tools and APIs are provided from vendors which we can quickly plug in our app and not have to worry about these.
+
+
+CONS:
+-> Lack of Control
+-> Vendor lock-in (difficult to migrate an apps from one vendor to another)
+-> Performance at scale (compared to Bare Metal)
+
+
+
+
+What is Cloud Foundry?
+
+  
+
+
 
 Managed By Customer:
 Applications, Data

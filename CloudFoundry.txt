@@ -1,0 +1,19 @@
+-- https://www.youtube.com/watch?v=oUpqXxmr6oU
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+An Open Source Platform-As-A-Service
+
+It enables us to focus on cloud-native application development and puts a focus on developer experience. (Developing the app, testing it, moving it to production and automating all of these flows)
+
+
+1. Polyglot Environment
+2. Interoperable
+3. Open Source
+
+
+
+CF??
+CFAR -> Cloud Foundary Application Runtime environment
+
+DIEGO/GARDEN
