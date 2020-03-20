@@ -1,3 +1,20 @@
+
+Google Cloud provides three main services for different types of storage:
+
+Persistent Disk:
+	-> For Block Storage
+
+Filestore:
+	-> For Network File Storage
+
+Cloud Storag:
+	-> For Object storage
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
 -- https://medium.com/@jeevananandanne/google-cloud-storage-8afb6a860234
 
 GCP Storage:
@@ -54,7 +71,7 @@ Cloud SQL:
 
 Persistent Disk:
 	-> Analog to File System (provide Block storage)
-	-> Used in conjunction with VM's but are not the part of VM itself, and can be attached and detached from VM.
+	-> Used in conjunction with VM's but are not the part of VM itself, and can be attached and detached from VM (like USB)
 	-> Can be attached / move to another VM
 	-> Single VM can has upto 16 persistent disks plugged or attached to it
 	-> Each disk can store upto 64TB of data. 
@@ -64,6 +81,20 @@ Persistent Disk:
 	-> Customization also such as region and zone, data encryption.  
 	-> Resizing is possible
 	-> Underlying ingrastructure automation handles partitioning, redundancy and performance.
+	-> Ability to choose where they are located and what type of availability is needed: they can be Regional, Zonal, or Local
+
+While local disks are not, in theory, part of the Google Cloud Persistent Disk service, it is important to mention them. 
+These local disks are only available in the hardware where the virtual machine is running and, while providing the best I/O 
+performance, they are not often recommended due to the low availability and redundancy. 
+On the other hand, if you require high availability, Regional disks will offer you that out-of-the-box, with your disks being 
+replicated behind the scenes in different zones within a region. 
+A more moderate (and less-expensive) approach are Zonal disks, which are storage disks that are also highly available, but only 
+within a single zone.
+
+
+Other lesser known, yet great features of Google Cloud Persistent Disks are automatic encryption, flexibility to resize 
+while-in-use, and a snapshot capability which can be used for both backup and virtual machine image creation.
+
 
 
 IOPS -> Input/Output Operations per second vs Throughput
@@ -73,7 +104,7 @@ What is automatic striping in disk?
 
 
 
-Cloud Filestore:
+Cloud Filestore (Google Managed Cloud service):
 	-> Analogus to  Network Attached Storage (NAS)
 	-> Shared block storage for Conpute VMs or Containers (Multiple compute nodes or Kubernetes containers)
 	-> Low latency, low maintenance

@@ -1,0 +1,9 @@
+https://www.redhat.com/en/topics/data-storage/network-attached-storage
+
+Network-attached storage (NAS) is a file-level (as opposed to block-level) computer data storage server connected to a computer network providing data access to a heterogeneous group of clients.
+
+Network-attached storage (NAS) is a file-level storage architecture that makes stored data more accessible to networked devices.
+NAS is 1 of the 3 main storage architectures—along with storage area networks (SAN) and direct-attached storage (DAS).
+NAS gives networks a single access point for storage with built-in security, management, and fault tolerant capabilities.
+
+They typically provide access to files using network file sharing protocols such as NFS, SMB, or AFP.
