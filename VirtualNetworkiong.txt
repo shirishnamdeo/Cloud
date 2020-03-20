@@ -1,0 +1,21 @@
+-- https://www.youtube.com/watch?v=u0TgGIn2LIM
+
+Virtual Networking:
+Primarily used for Cloud
+
+Virtual Overlay
+Physical Underlay
+
+
+Fabric
+TEP (Tunneling End Point)
+
+
+Virtual Networks has
+	Segments
+	Transport Zone (collection of Segments)
+
+	Micro Segmentation
+
+
+Routers (Physical vs Virtual Routers)

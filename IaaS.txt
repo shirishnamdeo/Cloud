@@ -1,4 +1,48 @@
+-- https://www.youtube.com/watch?v=XRdmfo4M_YA
+
+---------------------------------------------------------------------------------------------------------------------------------
+
 IaaS -> Infrastructure As A Service
+
+Infrastructure (falls into three main categories):
+	Compute (General Purpose Compute, GPU, HPC)
+	Storage (Three main types: Object, Block, File)
+ 	Network (To ties everything together, ie to Compute talk to Storage and other Compute)
+
+Compute:
+	GPC (General Purpose Compute for Normal web server, application server etc)
+	GPU (Does they have their own servers?)
+	HPC (High performance Computing)
+
+
+Storage:
+	Object (a little bit lower performance, but relatively inexpensive for GPC)
+		   Like pictures, documents, web server graphics etc.
+	Block  (attached with iSCSI)
+	File   (atttached with NFS)
+
+
+Network:
+
+
+
+Example:
+We want to do visual recognition of tons of images. Initially the would be stored in Object storage.
+Then these objects needs to be sent to GPU servers but as GPU servers itself doesn't have that much place to hold this data it 
+would be stansferred to Block storage during the time of computation (back and forth multiple times) and when the model is 
+trained or predictions are done the complete data is shifted back again to Object storage through network layer.
+(because Object storage is inexpensive and is good for archiving data)
+
+
+As-A-Service:
+	Shared (many users shared the same Infrastructue)
+	Hourly/Monthly (Billing strategy)
+	No Contracts (Use as long as you need it and then get rid of it, no compulsion/Contracts) On Demand.
+	Self Service (Services provided, provisioned in very less time)
+ 
+---------------------------------------------------------------------------------------------------------------------------------
+
+
 
 It refers to online service that refers to high level API use to deference various low level details of underlying network Infrastructue like physical computing, data partitioning, scaling. 
 In IaaS, consumer can deploy arbitary softwares, including OS and other applications.
@@ -10,3 +54,4 @@ Managed By Provider:
 Virtualization, Servers, Storage, Networking
 
 
+---------------------------------------------------------------------------------------------------------------------------------
