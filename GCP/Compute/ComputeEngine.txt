@@ -1,0 +1,6 @@
+-- https://cloud.google.com/compute/docs/
+
+Compute Engine is an Infrastructure-as-a-Service. You have to create and configure your own virtual machine instances. 
+It gives you more flexibility and generally costs much less than App Engine. 
+
+The drawback is that you have to manage your app and virtual machines yourself.

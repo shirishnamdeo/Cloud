@@ -1,0 +1,13 @@
+-- https://cloud.google.com/appengine/docs/the-appengine-environments
+
+App Engine is a Platform-as-a-Service. It means that you simply deploy your code, and the platform does everything else 
+for you. 
+For example, if your app becomes very successful, App Engine will automatically create more instances to handle the 
+increased volume.
+
+
+One more important distinction: 
+Projects running on App Engine can scale down to zero instances if no requests are coming in. 
+This is extremely useful at the development stage as you can go for weeks without going over the generous free quota of 
+instance-hours. Flexible runtime (i.e. "managed VMs") require at least one instance to run constantly.
+

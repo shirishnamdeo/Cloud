@@ -1,0 +1,53 @@
+-- https://www.youtube.com/watch?v=FZR0rG3HKIk
+-- https://www.youtube.com/watch?v=FTOde-5yLzA
+-- https://www.youtube.com/watch?v=daDbY2iDmU0  (good)
+-- https://www.youtube.com/watch?v=zLJbP6vBk2M
+
+Hypervisor: 
+
+Hypervisor is the key to enable Virtualization.
+Its a software installed on top of Hardware, creating a virtualization layer.
+Acting as a platform for the VMs to be created on.
+It manages the sharing of the physical resources into virtual.
+
+
+
+Type 1 Hypervisor (sits on top of BareMetal), also know as Bare-Metal Hypervisor:
+	This type of Hypervisor has its own operating system, and can be installed directly on the Computer Hardware.
+	More frequently used
+	Lower latency
+
+	VMWare Type 1 Hypervisor is ESXi Server (an Operating System)
+
+
+Type 2 Hypervisor (known as Hoster Hypervisor):
+	This Hypervisor is a Software Application that is installed on a Host Operating System, that create virtualization 
+	layer, in which we can create our Virtual Machines.
+	Example Oracle Virtual Box, VMWare
+	Higher lateny
+
+	VMWare Type 1 Hypervisor is VMWare Workstation
+
+
+
+Over these Hypervisor, independed VMs can be spinoff/hosted.
+
+
+Because these Virual Machines are independent, they can be moved from one Hypervisor to onother Hypervisor on completely 
+different physical machine (almost instantaneously which gives flexibility and portability within the environment).
+
+
+
+
+Virtualization Benifits:
+1. Cost Benifits (Run multiple different environments from one piece of infrastructure, reduce physical infrastructure 
+   footprint)
+   Do not need to run as many servers, save electiticity, save maintenance cost.
+
+2. Agility & Speed
+   Spinning up a Virtual Machines is relatively easy and quick (ex if we want new environment for testing)
+
+
+3. Lowers the Downtime
+   Virtual Machines can be moved from one Hypervisor to another on a different physical server.
+   

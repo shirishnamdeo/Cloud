@@ -1,0 +1,16 @@
+-- https://cloud.google.com/functions/
+
+Cloud Functions (currently in beta) is the next level up from App Engine in terms of abstraction - no instances!
+It allows developers to deploy bite-size pieces of code that execute in response to different events, which may include 
+HTTP requests, changes in Cloud Storage, etc.
+
+
+The biggest difference with App Engine is that functions are priced per 100 milliseconds, while App Engine's instances 
+shut down only after 15 minutes of inactivity. 
+Another advantage is that Cloud Functions execute immediately, while a call to App Engine may require a new instance and
+cold-starting a new instance may take a few seconds or longer (depending on runtime and your code).
+
+This makes Cloud Functions ideal for 
+(a) rare calls - no need to keep an instance live just in case something happens 
+(b) rapidly changing loads where instances are often spinning and shutting down, and possibly more use cases.
+
