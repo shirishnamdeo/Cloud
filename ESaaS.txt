@@ -1,0 +1,6 @@
+Enterprise Storage as a Service
+
+Block Storage as a Service (BSSaaS) falls into the much larger category of Enterprise Storage as a Service (ESaaS), 
+where those looking for cloud-based storage can select from block, file, or object storage to support their data storage
+needs.
+
