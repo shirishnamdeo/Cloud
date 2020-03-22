@@ -1,0 +1,6 @@
+-- https://cloud.google.com/storage/docs/storage-classes
+
+Standard Storage
+Nearline Storage
+Coldline Storage
+Archive  Storage

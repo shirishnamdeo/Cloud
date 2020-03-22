@@ -1,0 +1,27 @@
+
+-- https://cloud.google.com/persistent-disk
+
+Persistent Disk == Block Storage
+
+High-performance block storage for virtual machines and containers.
+
+Fast and flexible block storage:
+Google Persistent Disk is durable and high performance block storage for Google Cloud Platform.
+Persistent Disk provides SSD and HDD storage which can be attached to instances running in either Compute Engine or 
+Google Kubernetes Engine. 
+Storage volumes can be transparently resized, quickly backed up, and offer the ability to support simultaneous readers.
+
+
+Share data easily
+Persistent Disk offers unique multi-reader capability. With multi-reader mounting, many virtual machines can read data 
+from a single Persistent Disk and sharing content is a snap. 
+Attaching a disk to more virtual machines does not affect aggregate performance or cost; each machine gets a share of 
+the per-disk performance limit.
+
+
+
+Good For:
+	Disks for virtual machines
+	Sharing read-only data across multiple virtual machines
+	Rapid, durable backups of running virtual machines
+	Storage for databases

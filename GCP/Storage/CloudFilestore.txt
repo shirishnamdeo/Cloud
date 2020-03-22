@@ -1,0 +1,11 @@
+-- https://cloud.google.com/filestore/docs
+-- https://cloud.google.com/filestore
+
+Cloud Filestore is a managed file storage service for applications that require a filesystem interface and a shared 
+filesystem for data.
+
+Filestore gives users a simple, native experience for standing up managed Network Attached Storage (NAS) with their 
+Google Compute Engine and Kubernetes Engine instances.
+
+The ability to fine-tune Filestore’s performance and capacity independently leads to predictably fast performance for 
+your file-based workloads.

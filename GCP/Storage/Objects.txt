@@ -1,0 +1,41 @@
+-- https://cloud.google.com/storage/docs/key-terms
+
+
+Objects
+Objects are the individual pieces of data that you store in Cloud Storage. There is no limit on the number of objects 
+that you can create in a bucket.
+
+
+Objects have two components: object data and object metadata. 
+Object data is typically a file that you want to store in Cloud Storage. 
+Object metadata is a collection of name-value pairs that describe various object qualities.
+
+
+A common character to include in object names is a slash (/). By using slashes, you can make objects appear as though 
+they're stored in a hierarchical structure. 
+For example, you could name one object /europe/france/paris.jpg and another object /europe/france/cannes.jpg. 
+When you list these objects, they appear to be in a hierarchical directory structure based on location; 
+however, Cloud Storage sees the objects as independent with no hierarchical relationship whatsoever.
+
+
+
+Object immutability:
+-- https://cloud.google.com/storage/docs/key-terms#immutability
+
+Objects are immutable, which means that an uploaded object cannot change throughout its storage lifetime. 
+An object's storage lifetime is the time between successful object creation (upload) and successful object deletion. 
+
+In practice, this means that you cannot make incremental changes to objects, such as append operations or truncate 
+operations. 
+However, it is possible to overwrite objects that are stored in Cloud Storage, and doing so happens atomically — until 
+the new upload completes the old version of the object will be served to readers, and after the upload completes the new
+version of the object will be served to readers. 
+So a single overwrite operation simply marks the end of one immutable object's lifetime and the beginning of a new 
+immutable object's lifetime.
+
+
+There is no limit to how frequently you can create or update different objects in a bucket. 
+However, a single particular object can only be updated or overwritten up to once per second. 
+For example, if you have an object bar in bucket foo, then you should only upload a new copy of foo/bar about once per 
+second. Updating the same object more frequently than once per second may result in 429 Too Many Requests errors.
+

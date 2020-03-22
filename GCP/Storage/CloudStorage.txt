@@ -1,0 +1,22 @@
+
+-- https://cloud.google.com/storage
+
+Cloud Storage == Object Storage
+
+
+
+Hierarchy
+Cloud Storage uses a flat namespace to store objects. 
+However, some tools (for example, Google Cloud Console and gsutil) can work with objects as if they are stored in a 
+virtual hierarchy, as a convenience.
+
+
+Projects
+All data in Cloud Storage belongs inside a project. A project consists of a set of users, a set of APIs, and billing, 
+authentication, and monitoring settings for those APIs. You can have one project or multiple projects.
+
+
+Namespace
+There is only one Cloud Storage namespace, which means every bucket must have a unique name across the entire Cloud 
+Storage namespace. Object names must be unique only within a given bucket.
+
