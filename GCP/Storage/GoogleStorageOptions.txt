@@ -1,0 +1,44 @@
+[Platform Overview - Data & Storage (Google Cloud Essentials)]
+-- https://www.youtube.com/watch?v=tc2940Zwvyk
+
+
+
+Cloud Storage (Ability to store objects and files)
+Big Query
+Cloud Dataproc
+Cloud SQL (Support MySql and PostgresSQL services)
+Cloud Spanner (Horizontally scalable, strongly consistent relational database as a service.)
+Cloud Firestore (For NoSql, highly scalable and consistent Database)
+Cloud BigTable (Fully managed NoSQL database service)
+
+
+Filestore (For applications that require file system interface)
+Cloud Memorystore (for reddis provide in-memory fully managed data store service, ideal to build application caches)
+Cloud Dataflow (for build and execute batch and streaming pipelines, using Apache Beam programing model)
+Cloud Dataprep (for data scientists, not waste time in cleaning)
+Cloud DataStudio (for interaction dashboards and inganing reports)
+
+
+
+https://cloud.google.com/products/databases
+
+
+
+
+Google Cloud Codelabs → https://goo.gle/2XDECTW 
+Google Cloud Storage → https://goo.gle/31qlFq7  
+BigQuery → https://goo.gle/2F0NCuP 
+Dataproc → https://goo.gle/2R8CCAC  
+CloudSQL → https://goo.gle/2ZiYOLe 
+Cloud Spanner → https://goo.gle/2WZkmPy 
+Cloud Firestore → https://goo.gle/2IyOeJk  
+Cloud Bigtable → https://goo.gle/2R78rd7 
+Cloud Pub/Sub → https://goo.gle/2F4hsPj   (Producing and Consuming messages globally)
+Cloud Filestore → https://goo.gle/2WZSSJH  
+Cloud Memorystore → https://goo.gle/2R8DPrE 
+Cloud Dataflow → https://goo.gle/2IFVe7o 
+Cloud Dataprep → https://goo.gle/2R8Rkr8 
+Cloud storage products → https://goo.gle/2X8dlvC 
+Choosing between Datastore mode and Native mode → https://goo.gle/2WEnuRx 
+
+

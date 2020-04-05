@@ -1,0 +1,4 @@
+Corn as a service for:
+	Https endpoints
+	Cloud Pub/Sub topics
+	App engine application

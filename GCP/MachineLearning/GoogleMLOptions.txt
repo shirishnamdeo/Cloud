@@ -1,0 +1,44 @@
+[Platform Overview - Machine Learning (Google Cloud Essentials)]
+-- https://www.youtube.com/watch?v=QR_LQQ-vvko&list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL&index=7&t=0s
+
+--https://codelabs.developers.google.com/
+
+
+Vision API (to find what is in the picture)
+
+
+Google offers pre-trained model via API's
+
+Cloud Vision
+Cluod Video Intellegence
+AutoML Vision 
+
+
+Cloud Translation
+Cloud Natural Language
+AutoML Translation
+AutoML Natural Language
+
+
+DialogFlow Enterprise Edition
+Cloud Text-to-Speech
+Cloud Speech-to-Text
+
+
+
+API's can be called directly or via libraries.
+
+
+
+Cloud AutoML -> (using transfer learning and Neural Architecture search technology)
+
+
+
+Deep Learning VM Image 
+	Google compute engine instances comes preinstalled with latest version of Tensorflow, PyTorch, and Sklearn.
+	Can also add TPU and GPU
+
+
+Cloud AI platform
+	Offers fully managed training and prediction services
+	Can build models with multiple framworks - Skleanr, XGBoost, Keras and Tensorflow.

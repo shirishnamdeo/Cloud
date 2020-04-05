@@ -1,0 +1,3 @@
+Many to many async messaging
+'At-least-once' delivery
+Global

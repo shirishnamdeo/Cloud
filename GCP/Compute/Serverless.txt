@@ -1,0 +1,35 @@
+[Platform Overview - Serverless (Google Cloud Essentials)]
+-- https://www.youtube.com/watch?v=PBw9vD_BO5A
+
+FaaS -> Function As A Service
+
+No service to manage and No Cluster to setup, provision or upgrade.
+Infrastructure will be auto-scaled to meet the load demand.
+Only billed for the resources consumed
+
+
+
+Developers write a function that is triggered on an event or an incoming http request.
+This function code can talk to a database and to other services, before it generates another event or simply sends the
+response back.
+
+
+Google Cloud Function support multiple programming languages (Python/NodeJs/Go/Java etc)
+Simply deploy the functions along with the list of dependencies (which will resolved directly in the cloud) and 
+configure the event that will trigger its execution.
+
+
+
+
+Cloud Run (Bring serverless to Containers)
+
+
+
+
+
+
+Serverless Computing → https://goo.gle/2EKq7WP 
+Cloud Run → https://goo.gle/2EE98Wj 
+App Engine → https://goo.gle/2Mj1g2w 
+
+

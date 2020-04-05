@@ -1,7 +1,12 @@
 
 -- https://cloud.google.com/storage
+-- https://www.youtube.com/watch?v=mOHy6m8KzJk
+
 
 Cloud Storage == Object Storage
+
+Object Storage is not a file system, so there is no directory semantics to it.
+Object Storage has higher latency then HDFS.
 
 
 
@@ -19,4 +24,37 @@ authentication, and monitoring settings for those APIs. You can have one project
 Namespace
 There is only one Cloud Storage namespace, which means every bucket must have a unique name across the entire Cloud 
 Storage namespace. Object names must be unique only within a given bucket.
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Location Type:
+	Multi-Regional (Geo-Redundant, two regions/Continent but not specific)
+	Regional (On only one Continent)
+	Dual-Region (Two specific regions/Continent), knowledge of region can helps in co-locate storage and compute.
+
+
+Storage Classes:
+	Standard (High Frequency Access)
+	Nearline (Low Frequency Access)
+	Coldline (Very Low High Frequency Access)
+	Archival (Lowest Frequency Access)
+
+There is a single unified API to interact will all Storage Classes and Type. This helps in moving objects across classes
+completly seamless.
+
+
+Designed for 11 Nines (99.999999999%) of durability.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+Common use cases:
+	Content storage and delivery
+	Compute, analytics and ML
+	Backup and Archiving
+
 

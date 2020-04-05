@@ -1,0 +1,53 @@
+[Platform Overview - Compute (Google Cloud Essentials)]
+-- https://www.youtube.com/watch?v=hHmBOv8z1D0
+
+
+
+Compute Engine (enables to provision, start and connect a virtual machine. Enable to create single VM instances, machine
+               types, OS image, region)
+               Ability to add GPU's/TPU's to the instance
+               Fine grained Security access conrol
+               Https conectivity
+               Live migration of running applications
+               Preemptible VMs
+
+               Complete control but with this comes management overhead
+
+
+Google Cloud Functions
+				Serverless
+				For Cloud Functions to work you don't have to provision a cluster or deal with server configs, pay only
+				for usage. Only when the code is running. No traffic - No cost. 
+				Large scale app developmet a bit of an issue.
+
+				To not worry about the VM's but only to focus on code.
+				Lot of Triggers supported on the Buckets. (only on buckets? Is this tightly coupled with Cloud Storage?)
+				No. triggers are supported with a lot of storage technologies like Pub/Sub, Databases, even compute 
+				engine instances changing states.
+				Can also be invoked using HTTP requests (means a user visit the URL and the function does the required)
+
+
+Google App Engine
+				Managed platform
+				Serverless benifits (for large scale application, say with multiple services)
+				Can deply source code
+				A lot more configuration possible for developers, such as services, versioning and traffic splitting.
+				App Engine applications can be build in multiple services, with different languages, each can be scaled 
+				independently.
+				Each service can offer multiple versions all active at the same time.
+
+Google Kubernetes Engine
+				For Container
+				A fully managed version of Kubernetes.
+				Can deply the containerized application to GKE, which offers a productioned infrastructure
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Links:
+Compute Engine → https://goo.gle/2W1bUP9
+Kubernetes Engine → https://goo.gle/2Yw5HIN
+Google App Engine → https://goo.gle/37SL2Df
+Google Cloud Functions → https://goo.gle/2Yn2ATi
+
+
