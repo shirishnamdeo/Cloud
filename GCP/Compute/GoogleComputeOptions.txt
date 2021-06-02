@@ -48,6 +48,6 @@ Links:
 Compute Engine → https://goo.gle/2W1bUP9
 Kubernetes Engine → https://goo.gle/2Yw5HIN
 Google App Engine → https://goo.gle/37SL2Df
-Google Cloud Functions → https://goo.gle/2Yn2ATi
+Google Cloud Functions → https://goo.gle/2Yn2ATi  https://cloud.google.com/functions
 
 

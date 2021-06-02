@@ -1,5 +1,7 @@
 -- https://cloud.google.com/functions/
 
+Cloud Functions is Google Cloud’s event-driven serverless compute platform.
+
 Cloud Functions (currently in beta) is the next level up from App Engine in terms of abstraction - no instances!
 It allows developers to deploy bite-size pieces of code that execute in response to different events, which may include 
 HTTP requests, changes in Cloud Storage, etc.
@@ -13,4 +15,8 @@ cold-starting a new instance may take a few seconds or longer (depending on runt
 This makes Cloud Functions ideal for 
 (a) rare calls - no need to keep an instance live just in case something happens 
 (b) rapidly changing loads where instances are often spinning and shutting down, and possibly more use cases.
+
+
+------------------------------------------------------------------------------------------------------------------------
+-- https://cloud.google.com/functions/docs/tutorials/ocr
 
