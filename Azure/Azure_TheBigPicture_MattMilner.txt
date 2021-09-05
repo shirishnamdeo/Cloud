@@ -1,0 +1,14 @@
+Azure Compute
+Azure DevOps
+Azure Data Solution And ML
+
+
+IaaS -> Infrastructure AS-A Service
+PaaS -> Platform AS-A Service
+SaaS -> Software AS-A Service
+
+Serverless??
+
+Compute
+Data Storage/Processing
+Integration

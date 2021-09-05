@@ -1,0 +1,22 @@
+Developer
+System Administrator
+Solution Architect
+Data Engineer
+Data Scientist
+AI Engineer
+DevOps Engineer
+Security Engineer
+
+
+Cloud Architect
+
+
+Microsoft Fundamentals [AZ900]
+Azure Administrator Associate [AZ104]
+Azure Developer Associate [AZ204] **
+Azure Solutions Architect [AZ303/AZ304]
+
+
+
+Microsoft Learn Web-Site
+Azure Free Account
