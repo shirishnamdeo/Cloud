@@ -1,0 +1,190 @@
+AZ-900 Microsoft Azure Fundamentals
+
+Q. What is a Resource-Group?
+
+SLA -> Service Level Agreement
+
+High-Availability
+Fault Tolerance
+Agility
+Elasticity
+
+
+Capital Expense vs Operational Expense
+
+
+Cloud Deployment Models:
+    Private Cloud
+    Public Cloud
+    Hybrid Cloud
+    Community Cloud
+
+
+
+Cloud Service Models:
+    Iaas (Virtual Machines, Storage, Networks (equipments))
+    PaaS (Just move the application code to a location, and Cloud-Provider has the responsibility of deploying, running, increasing-resource if needed etc)
+    SaaS (example: Office365, Gmail, Google Applications, Salesforce, Citrix)
+
+
+Azure Compute Services:
+    Azure Virtual Machines -> Linux & Windows | Virtualization -> Hypervisor
+    Azure Compute Services is same ae Amazon Elastic-Compute-Cloud EC2
+    Auto Scaling (adding-removing servers) -> Elasticity
+    App Services (WebApps, MobileApps, LogicApps, APIApps, FunctionApps) [Serverles Computing Model][NoControl/Management]
+    Azure Container Service
+    Azure Kubernetes Service (AKS)
+
+
+Availability Options:
+    Availability Zone
+    Availability Sets
+    Virtual Machine Scale Set
+
+
+
+Virtual Network (VNET)
+Subnets
+Network Security Groups
+Azure Firewal
+
+---------------------------------------------------------------------------------------------------
+Microsoft Developer Associate AZ-204
+
+https://github.com/zaalion/oreilly-az-204
+
+Azure SDKs
+Azure PowerShell
+Azure CLI
+
+
+-> Only test question. No Practical questions in this course.
+
+
+Azure Functions
+
+Cosmos DB -> For N0-SQL DataBases
+Blob Storage -> Any type of files
+
+
+Virtual Machine vs Container
+
+Azure-Container-Registry [Same as Docker Hub] (to keep the container in )
+Azure-Container-Instance (for single Container) 
+Azure-Kuberneter-Services (for multiple communicating containers)
+Can host container in Azure Functions Apps/App services
+
+
+Azere Resource Manager (ARM)
+
+Azure Function Apps (can be serverless) [multiple triggers methods]
+Azure App Servies (is not serverless) [triggers by http(s)]
+Azure DevOps
+
+
+Serverles is something when we are using it (only pay for when running), Arure is responsible for scalling-in/out.
+Virtual Machine is also not serverless.
+
+
+Data Storage:
+
+Azure Conmos DB [5 API options] (Different API's has different ways in which data is stored)
+    -> ConmosDb Core
+    -> Azure CosmosDB API for MongoDB
+    -> Cassandra
+    -> Azure Table
+    -> Gremlin (Graph)
+
+
+Multi-Region Read
+Multi-Region Write
+
+Strong Consistency -> ONly get confirmation of write unless the data is replicated to all regional-instances [Slower writes]
+Session
+Eventual
+
+
+Speaker: Reza Salehi Moderator
+https://docs.microsoft.com/en-us/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-8.1.0
+https://uptime.is/
+https://docs.microsoft.com/en-us/cli/azure/aks?view=azure-cli-latest#az-aks-create
+https://azure.microsoft.com/en-us/services/devops/
+https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp
+https://docs.microsoft.com/en-us/azure/cosmos-db/sql/sql-query-getting-started
+https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb/feature-support-36
+https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels
+
+web: Consistency levels in Azure Cosmos DB
+
+
+Azure SQL Databases [for Relational DB] (not in exam)
+PostgresSQL (not in exam)
+
+
+Azure Storage Account -> Blogs (in exam)
+    Containers (Blobs)
+    File Shares (SMB compatible)
+    Queues 
+    Tables
+
+    
+
+    Locally Redundant
+    Geo
+    Zone
+    Zoe**??
+
+Enable Hierarchical namespace (for Data Lake Gen2)
+
+
+
+
+Access Accounts
+Shared Access Signature
+
+
+Page-Blobs -> Random access
+Block-Blobs
+Append-Blobs
+
+https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy
+https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs
+
+
+SAS Tokens
+
+
+---------------------------------------------------https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy
+
+Reza Salehi Moderator
+10:52PM
+RS
+https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blob
+
+
+
+Azure KeyVault (imp)
+    Keys
+    Secrets
+    Certificates
+
+HSM Hardware Security 
+
+
+
+
+Messaging
+Azure Service Bus (queues & Topics) 
+Storage Queues
+
+
+
+Microsoft Identity Platform
+    Azure Active Directory
+https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy
+
+https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs
+
+
+Microsoft Graph
+    Microsoft 365 resources

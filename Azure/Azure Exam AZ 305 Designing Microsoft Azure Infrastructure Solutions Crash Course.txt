@@ -1,0 +1,24 @@
+https://event.on24.com/eventRegistration/console/EventConsoleApollo.jsp?&eventid=3760192&sessionid=1&username=&partnerref=&format=fhvideo1&mobile=&flashsupportedmobiledevice=&helpcenter=&key=FEF8F8E18B778DDA633613910A0C43AB&newConsole=true&nxChe=true&newTabCon=true&consoleEarEventConsole=false&text_language_id=en&playerwidth=748&playerheight=526&referrer=https://event.on24.com/interface/registration/autoreg/index.html?sessionid=1&eventid=3760192&key=FEF8F8E18B778DDA633613910A0C43AB&email=1dc5b7fd-8dc7-46ef-9f02-2ada2725eb1f%40platform&event_email=N&marketing_email=N&firstname=S&lastname=N&std1=0636920074406&std2=0636920074408&std3=88f6fc2d-50e7-49ec-9735-26767a4baf01&std4=1&eventuserid=545614836&contenttype=L&mediametricsessionid=470241697&mediametricid=5290785&usercd=545614836&mode=launch
+
+
+AZ 305 -> Expert Level Certification [Designing Microsoft Azure Infrastructure Solutions]
+AZ-104 -> Prequisite for AZ-305 [Microsoft Certified: Azure Administrator Associate]
+
+AZ-303 AZ-304 is not needed anymore. Depreciated.
+
+AZ-500?
+
+Microsoft Azure Well-Architect Framework
+
+https://github.com/timothywarner/az305
+
+
+Azure Databricks
+
+Azure SQL Database vs SQL Server
+
+
+Azure Stack Hub
+
+DP -> Certification Exam
+
