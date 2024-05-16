@@ -18,4 +18,5 @@ Virtual Networks has
 	Micro Segmentation
 
 
+
 Routers (Physical vs Virtual Routers)
