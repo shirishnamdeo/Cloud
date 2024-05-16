@@ -1,0 +1,13 @@
+Amazon Simple Storage Service (S3)
+Amazon Elastic File System (EFS)
+Amazon Elastic Block Store (EBS)
+Amazon FSx
+Amazon File Cache
+
+Amazon Glacier
+
+AWS Storage Gateway
+
+Disaster Recovery and Backup:
+    AWS Elastic Disaster Recovery
+    AWS Backup
