@@ -11,6 +11,7 @@ Fabric
 TEP (Tunneling End Point)
 
 
+
 Virtual Networks has
 	Segments
 	Transport Zone (collection of Segments)
