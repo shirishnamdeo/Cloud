@@ -1,0 +1,4 @@
+AWS Architecture Principles
+
+Core Cloud Deployment And Operating Principles
+Share Responsibility Model For Security
